@@ -1,5 +1,5 @@
 # Geometry Calculator
-_build with python and PyQt5 gui library_
+_built with python and PyQt5 gui library_
 
 
 ## Features
@@ -14,7 +14,7 @@ _build with python and PyQt5 gui library_
 
 ## Installation
 
-The repository comes with to .exe files. Here's how to use them:
+The repository comes with two .exe files. Here's how to use them:
 * Use the **main.exe** file if you want to run the project from the project directory.
-* Use geometry_calculator.exe file to install and run the project from wherever you want.
+* Use the **geometry_calculator.exe** file to install and run the project from wherever you want.
 
