@@ -10,10 +10,16 @@ class MainWidget(QMainWindow):
     def __init__(self):
         super(MainWidget, self).__init__()
         uic.loadUi('design.ui', self)
+        self.back_button.hide()
         self.pages.setCurrentWidget(self.main_page)
         self.back_button.clicked.connect(lambda: self.pages.setCurrentWidget(self.main_page))
 
+    def on_back_button_clicked(self):
+        self.back_button.hide()
+
     def on_choose_button_clicked(self):
+        self.back_button.show()
+
         shape_name = self.shape_group.checkedButton().objectName().split('_')[0]
         self.pages.setCurrentWidget(
             getattr(self, f'{shape_name}_page', self.main_page)
